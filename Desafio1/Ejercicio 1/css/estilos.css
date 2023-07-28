@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
+
+:root{
+    --font-mulish:'Mulish', sans-serif;
+
+    /*font weight*/
+    --fw-regular:400;
+    --fw-bold:700;
+
+    /*font size*/
+    --fs-40:4rem;
+    --fs-21:2rem;
+
+    /*colors*/
+    --clr-principal:#3957f1;
+    --clr-secondary:#15163d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;    
+    flex-wrap: wrap;
+
+    justify-content: space-evenly;    
+}
+
+.section{
+    width: 23%;
+    margin: 10px;    
+    box-shadow: 2px 2px 5px 1px rgba(128, 128, 128, 0.966);
+    text-align: center;
+}
+
+img{
+    width: 100%;
+}
+
+h1{
+    font-family: var(--font-mulish);
+    font-weight: var(--fw-bold);    
+    font-size: var(--fs-40);
+    color: var(--clr-principal);
+    text-align: center;
+    margin: 20px 0;
+}
+
+h2{
+    font-family: var(--font-mulish);
+    font-weight: var(--fw-regular);
+    font-size: var(--fs-21);
+    color: var(--clr-secondary);
+}
+
+/*media querys para las diferentes resoluciones*/
+@media (max-width: 992px) {    
+    .section{
+        width: 45%;
+    }
+}  
+
+@media (max-width: 768px) {
+    .section{
+        width: 80%;
+    }
+}  
